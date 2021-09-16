@@ -70,6 +70,9 @@ public final class Main {
           System.out.println(arguments[0]);
           // TODO: complete your REPL by adding commands for addition "add" and subtraction
           //  "subtract"
+          MathBot mBot = new MathBot();
+          mBot.add(Double.parseDouble(arguments[0]), Double.parseDouble(arguments[1]));
+          mBot.subtract(Double.parseDouble(arguments[0]), Double.parseDouble(arguments[1]));
         } catch (Exception e) {
           // e.printStackTrace();
           System.out.println("ERROR: We couldn't process your input");
