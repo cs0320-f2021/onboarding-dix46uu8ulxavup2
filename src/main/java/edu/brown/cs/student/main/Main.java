@@ -71,9 +71,9 @@ public final class Main {
           // TODO: complete your REPL by adding commands for addition "add" and subtraction
           //  "subtract"
           MathBot mBot = new MathBot();
-          if (arguments[0] == 'add') {
+          if (arguments[0].equals("add")) {
             mBot.add(Double.parseDouble(arguments[1]), Double.parseDouble(arguments[2]));
-          } else if (arguments[0] == 'subtract') {
+          } else if (arguments[0].equals("subtract")) {
             mBot.subtract(Double.parseDouble(arguments[1]), Double.parseDouble(arguments[2]));
           }
         } catch (Exception e) {
