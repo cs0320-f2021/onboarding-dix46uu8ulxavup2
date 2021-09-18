@@ -28,4 +28,24 @@ public class MathBotTest {
   }
 
   // TODO: add more unit tests of your own
+  @Test
+  public void testAddition2() {
+    MathBot matherator9000 = new MathBot();
+    double output = matherator9000.add(100.5, 3.5);
+    assertEquals(104.0, output, 0.01);
+  }
+
+  @Test
+  public void testLargerNumbers2() {
+    MathBot matherator9001 = new MathBot();
+    double output = matherator9001.add(100000.0, 200303.9);
+    assertEquals(300303.9, output, 0.01);
+  }
+
+  @Test
+  public void testSubtraction2() {
+    MathBot matherator9002 = new MathBot();
+    double output = matherator9002.subtract(18.5, 17.5);
+    assertEquals(1.0, output, 0.01);
+  }
 }
