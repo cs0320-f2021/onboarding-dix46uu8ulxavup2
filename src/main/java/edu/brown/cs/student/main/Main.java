@@ -72,9 +72,9 @@ public final class Main {
           //  "subtract"
           MathBot mBot = new MathBot();
           if (arguments[0].equals("add")) {
-            mBot.add(Double.parseDouble(arguments[1]), Double.parseDouble(arguments[2]));
+            System.out.println(mBot.add(Double.parseDouble(arguments[1]), Double.parseDouble(arguments[2])));
           } else if (arguments[0].equals("subtract")) {
-            mBot.subtract(Double.parseDouble(arguments[1]), Double.parseDouble(arguments[2]));
+            System.out.println(mBot.subtract(Double.parseDouble(arguments[1]), Double.parseDouble(arguments[2])));
           }
         } catch (Exception e) {
           // e.printStackTrace();
